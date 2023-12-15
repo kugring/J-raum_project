@@ -1,0 +1,160 @@
+/* src/App.css */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #222b34;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav_item {
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+
+.date-time-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.menu-main {
+    width: 750px;
+    margin-top: 70px; /* 상단 네비게이션 바 높이만큼 여백 추가 */
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-kategoria-name {
+    width: 70px;
+    text-align: center;
+    margin: 5px 20px;
+    border: 5px solid;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menu-kategoria {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.kategoria-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.kategoria-list {
+    border: dotted 3.5px grey;
+    border-radius: 20px;
+    width: 80px;
+    margin: 0 20px;
+    padding: 2px 0;
+    font-size: 17px;
+    text-align: center;
+}
+
+.menu-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70vw;
+    background-color: #f3f4f8;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.menu-item {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.menu-image {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.order-list {
+    margin: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.prize_name {
+    width: 100px;
+    text-align: left;
+}
+
+.prize_price {
+    width: 20px;
+    text-align: center;
+}
+
+.prize_quantity_btn {
+    width: 20px;
+}
+
+.prize_quantity {
+    width: 50px;
+    text-align: center;
+}
+
+.prize_delete_btn {
+    width: 50px;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.order-section {
+    position: fixed;
+    width: 30vw;
+    top:0;
+    right:0;
+    border: solid 1px;
+    flex: 1;
+    margin-top: 70px; /* 상단 네비게이션 바 높이만큼 여백 추가 */
+}
