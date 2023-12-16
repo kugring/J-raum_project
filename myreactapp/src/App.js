@@ -9,42 +9,70 @@ function App() {
         {
             id: 1,
             category: 'Coffee',
-            name: 'Americano',
+            name: '아메리카노_(H)',
             price: 3,
-            image: 'https://www.spcmagazine.com/wp-content/uploads/2022/08/spc_%ED%82%B9%EC%82%AC%EC%9D%B4%EC%A6%88-%EC%95%84%EC%9D%B4%EC%8A%A4-%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B4%EB%85%B8_1000.jpg'
+            image: 'https://i.pinimg.com/564x/83/28/b6/8328b6f35d523c0dced5872e3ed2624b.jpg'
         },
         {
             id: 2,
             category: 'Coffee',
-            name: 'Latte',
+            name: '아메리카노_(C)',
             price: 4,
-            image: 'https://health.chosun.com/site/data/img_dir/2023/02/02/2023020202137_0.jpg'
+            image: 'https://i.pinimg.com/564x/75/f5/7f/75f57fbd46dc00f52c2145dad31b533f.jpg'
         },
         {
             id: 3,
-            category: 'NonCoffee',
-            name: 'malcha',
+            category: 'Coffee',
+            name: '라떼_(H)',
             price: 4.5,
             image: 'https://mblogthumb-phinf.pstatic.net/MjAyMTA1MjBfNTUg/MDAxNjIxNDQwODM2MzEy.Ls5CKbqLphbAfxQX8r1-okwlv5MzNuhAKOm3GViDQcwg.6HS4uWVGqdATcYd_qrrQzv7HK2LFtr1f_aFbOiJdQicg.JPEG.kgyfjq/output_2525940195.jpg?type=w800'
         },
         {
             id: 4,
-            category: 'Beverage',
-            name: 'goguma',
+            category: 'Coffee',
+            name: '라떼_(C)',
             price: 2.5,
-            image: 'https://www.shinsegaegroupnewsroom.com/wp-content/uploads/2019/12/%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%EC%BD%94%EB%A6%AC%EC%95%84-%EC%B5%9C%EC%B4%88%EC%9D%98-%EA%B3%A0%EA%B5%AC%EB%A7%88-%EC%9D%8C%EB%A3%8C-%E2%80%98%EC%9E%90%EC%83%89-%EA%B5%B0%EA%B3%A0%EA%B5%AC%EB%A7%88-%EB%9D%BC%EB%96%BC%E2%80%99-%EC%B6%9C%EC%8B%9C2.jpg'
+            image: ''
         },
         {
             id: 5,
-            category: 'Beverage',
-            name: 'Iced Tea',
+            category: 'Coffee',
+            name: '바닐라 라떼_(H)',
             price: 3,
             image: 'https://img.freepik.com/premium-photo/a-glass-of-iced-tea-with-a-lemon-on-the-bottom_787273-2376.jpg'
         },
         {
             id: 6,
-            category: 'Beverage',
-            name: 'cocacola',
+            category: 'Coffee',
+            name: '바닐라 라떼_(C)',
+            price: 5,
+            image: 'https://sitem.ssgcdn.com/02/78/59/item/1000039597802_i1_750.jpg'
+        },
+        {
+            id: 7,
+            category: 'Coffee',
+            name: '카라멜 라떼_(H)',
+            price: 5,
+            image: 'https://sitem.ssgcdn.com/02/78/59/item/1000039597802_i1_750.jpg'
+        },
+        {
+            id: 8,
+            category: 'Coffee',
+            name: '카라멜 라떼_(C)',
+            price: 5,
+            image: 'https://sitem.ssgcdn.com/02/78/59/item/1000039597802_i1_750.jpg'
+        },
+        {
+            id: 9,
+            category: 'NonCoffee',
+            name: '말차 라떼_(H)',
+            price: 5,
+            image: 'https://sitem.ssgcdn.com/02/78/59/item/1000039597802_i1_750.jpg'
+        },
+        {
+            id: 10,
+            category: 'Coffee',
+            name: '말차 라떼_(C)',
             price: 5,
             image: 'https://sitem.ssgcdn.com/02/78/59/item/1000039597802_i1_750.jpg'
         },
@@ -124,29 +152,42 @@ function App() {
 
             </nav>
 
-            <div className="menu-main">
-                <div className="menu-kategoria">
-                    <div>기본 카테고리</div>
-                    <div className="kategoria-row">
-                        <div className="kategoria-list">커피</div>
-                        <div className="kategoria-list">논커피</div>
-                        <div className="kategoria-list">음료수</div>
-                        <div className="kategoria-list">차</div>
-                    </div>
+            <div className="kategoria">
+                <div>기본 카테고리</div>
+                <div className="kategoria-row">
+                    <div className="kategoria-item">커피</div>
+                    <div className="kategoria-item">논커피</div>
+                    <div className="kategoria-item">음료수</div>
+                    <div className="kategoria-item">차</div>
                 </div>
+            </div>
+            <div className="menu-main">
                 <div className="menu-body">
-                    <div className="menu-kategoria-name">커피</div>
+                    <div className="menu-kategoria">커피</div>
                     <div className="menu-section">
                         {menuItems.map((menuItem) => (
                             <div key={menuItem.id} className="menu-item" onClick={() => handleOrder(menuItem)}>
                                 <img className="menu-image" src={menuItem.image} alt={menuItem.name}/>
-                                <div>{menuItem.name}</div>
+                                <div className="menu_name">{menuItem.name}</div>
+                                <div>${menuItem.price}</div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className="menu-body">
+                    <div className="menu-kategoria">커피</div>
+                    <div className="menu-section">
+                        {menuItems.map((menuItem) => (
+                            <div key={menuItem.id} className="menu-item" onClick={() => handleOrder(menuItem)}>
+                                <img className="menu-image" src={menuItem.image} alt={menuItem.name}/>
+                                <div className="menu_name">{menuItem.name}</div>
                                 <div>${menuItem.price}</div>
                             </div>
                         ))}
                     </div>
                 </div>
             </div>
+
 
             {/*주문 내역*/}
             <div className="order-section">
