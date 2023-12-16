@@ -1,4 +1,6 @@
 // src/App.js
+//김민서
+
 
 import React, {useState, useEffect} from 'react';
 import './App.css'; // 스타일 파일 추가
