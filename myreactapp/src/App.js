@@ -1,6 +1,5 @@
 // src/App.js
-//김민서
-// 임재혁
+
 
 import React, {useState, useEffect} from 'react';
 import './App.css'; // 스타일 파일 추가
@@ -9,7 +8,7 @@ function App() {
     // 커피와 음료수 메뉴 아이템과 주문 내역을 관리하기 위한 state
     const menuItems = [
         {
-            id: 1,
+            id: 100,
             category: 'Coffee',
             name: '아메리카노_(H)',
             price: 3,
