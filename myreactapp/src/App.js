@@ -8,7 +8,7 @@ function App() {
     // 커피와 음료수 메뉴 아이템과 주문 내역을 관리하기 위한 state
     const menuItems = [
         {
-            id: 100,
+            id: 200,
             category: 'Coffee',
             name: '아메리카노_(H)',
             price: 3,
