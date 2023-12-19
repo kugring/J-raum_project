@@ -24,6 +24,17 @@
     color: #ffffff;
 }
 
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-time-section {
+    color: white;
+}
+
 .logo {
     width: 50px;
     height: 50px;
@@ -50,11 +61,15 @@
     background-color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 15px 0;
     font-weight: 600;
     font-size: 20px;
+}
+
+.kategoria-left {
+    margin: 0 22px;
 }
 
 .kategoria-row {
@@ -73,6 +88,7 @@
 }
 
 .menu-main {
+    position: fixed;
     background-color: #f3f4f8;
     margin-top: 130px; /* 상단 네비게이션 바 높이만큼 여백 추가 */
     display: flex;
@@ -80,9 +96,18 @@
     overflow-y: hidden;
 }
 
+.menu-box {
+    overflow: scroll;
+    height: 60vw;
+}
+
 .menu-body {
     display: flex;
     flex-direction: column;
+}
+
+.menu-kategoria-box {
+    width: 70px;
 }
 
 .menu-kategoria {
@@ -127,12 +152,8 @@
 }
 
 
-
-
-
-
-
 .order-section {
+    color: white;
     position: fixed;
     width: 30vw;
     height: 100vw;
@@ -141,20 +162,19 @@
     border: solid 1px;
     flex: 1;
     margin-top: 70px; /* 상단 네비게이션 바 높이만큼 여백 추가 */
-    background-color: #ffce87;
+    background-color: #8fa2a2;
 }
 
 
 .order-header {
-    margin: 20px;
+    margin: 20px 20px 0 20px;
     font-size: 30px;
     font-weight: bold;
-    color: #000000;
+    color: #ffffff;
 }
 
 .order-container {
-    border: 3px solid  red;
-    height: 40vw;
+    height: 52vw;
     overflow: scroll;
 }
 
@@ -163,6 +183,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 2vw 0;
 
 }
 
@@ -170,18 +191,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    margin-left: 2vw;
+    align-items: center;
+    width: 18vw;
 }
 
 .order_name {
     font-size: 2vw;
     font-weight: 600;
-}
-
-.order_price {
-        font-size: 2vw;
-    font-weight: 400;
+    margin: .6vw 0;
 }
 
 .order-item-middle {
@@ -189,20 +206,34 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-right: 2vw;
 }
 
+
 .order_quantity_btn {
-    font-size:3vw;
-    width: 3vw;
-    height: 3vw;
+    background-color: white;
+    border-radius: 20%;
+    color: #222b34;
+    font-size: 3.3vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .order_quantity {
-    font-size:3vw;
+    text-align: center;
+    font-size: 3vw;
+    width: 6vw;
     margin: 0 1vw;
 }
 
-.order_delete_btn {
+.order_price {
+    font-size: 3vw;
+    font-weight: 400;
+    margin-right: 1vw;
+    width: 9.5vw;
 }
 
+.order_delete_btn {
+    display: none;
+}
