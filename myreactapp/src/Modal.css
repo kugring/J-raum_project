@@ -1,0 +1,86 @@
+/* Modal.css */
+
+.modal_overlay {
+    width: 100%;
+    height: 750px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background: rgba(30, 30, 30, 0.8);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(1px);
+}
+
+.modal {
+    background: white;
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    border-radius: 25px 25px 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+}
+
+.modal-content {
+    background: #fff;
+    margin: 20px;
+    border-radius: 25px;
+
+}
+
+.close-btn {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 13px;
+    right: 11px;
+    cursor: pointer;
+    background-image: url('https://cdn.icon-icons.com/icons2/2715/PNG/512/x_icon_172101.png');
+    background-size: contain;
+    opacity: 0.5;
+}
+
+.modal-container {
+    position: fixed;
+    top: 39.3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    max-height: 60%;
+    overflow-y: auto;
+    border-top: 1.5px solid #ccc;
+    border-bottom: 1.5px solid #ccc;
+    background-color: #fff;
+    padding: 0;
+    box-sizing: border-box;
+    bottom: 0;
+}
+
+.modal-top {
+    font-size: 24px;
+    position: fixed;
+    top: 2.8%;
+    left: 3.2%;
+}
+
+.modal-bottom {
+    height: 100px; /* 높이 조절 */
+    background-color: lightgray;
+    overflow: hidden;
+}
+
+.modal-middle {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.menu-option {
+
+}
